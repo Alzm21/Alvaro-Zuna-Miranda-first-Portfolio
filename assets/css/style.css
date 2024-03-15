@@ -288,6 +288,10 @@ body {
   font-size: 16px;
 }
 
+.section_description {
+  margin: 50px 0 50px;
+}
+
                             /* WRAPPER */
           
 .wrapper {
@@ -412,7 +416,34 @@ body {
   }
 }
 
+/* SPOTIFY */
+
+.btn_sptf {
+  display: flex;
+  background-color: #00DA5A;
+  color: #ffffff;
+  padding: 7px 25px;
+  font-size: 40px;
+  line-height: 16px;
+  margin: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: .6s ease;
+}
+
+.spotify_info {
+  display: flex;
+  justify-content: center;
+}
+
                           /* CONTACT */
+
+.social_networks {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
 
 .form {
   display: flex;
@@ -464,6 +495,41 @@ body {
   background-color: var(--dan1);
   color: #fff;
   cursor: pointer;
+}
+
+.contact_links {
+  display: flex;
+  justify-content: center;
+
+  margin: 100px;
+  
+  gap: 16px;
+}
+
+.contact_link {
+  background-color: var(--dan9);
+  padding: 20px 20px;
+  color: var(--dan6);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.contact_link .bx {
+  color: var(--dan3);
+  font-size: 60px;
+}
+
+                            /* FOOTER */
+
+.footer {
+  background-color: var(--dan1);
+  color: var(--dan7);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: oblique;
+  text-align: center;
+  padding: 10px 0;
 }
 
                             /* OFF-SET */
