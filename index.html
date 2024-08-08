@@ -1,79 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JCAZM | Portfolio</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="assets\css\style.css">
-    
-</head>
-<body>
+  <head>
+      <meta charset="UTF-8">
+      <link rel="icon" type="image/svg+xml" href="/assets/img/custom-coding-svgrepo.svg" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>AlvDev | Portfolio</title>
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="assets\css\style.css">
+      
+  </head>
+  <body>
     <header class="header">
-        <img class="logo" src="assets/img/L4_cpy.png" alt="Jcazm">
-        <nav class="nav container">
-
-            <div class="nav_menu">
-                <ul class="nav_list">
-                    <li class="nav_item">
-                        <a href="#hero" class="nav_link">Home</a> 
-                    </li>
-                    <li class="nav_item">
-                        <a href="#about" class="nav_link">About</a>
-                    </li>
-                    <li class="nav_item">
-                       <a href="#projects" class="nav_link">Projects</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#learning" class="nav_link">Learning</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#interests" class="nav_link">Interests</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#contact" class="nav_link">Contact</a>
-                    </li>
-                </ul>  
-            </div>
-            <button type="button" class="btn btn_open" aria-label="open">
-                <i class='bx bx-menu'></i>
-            </button>
-        </nav>
+        <figure>
+          <img class="logo" src="/assets/img/Logo.png" alt="Alv_logo">
+        </figure>
+        <div class="nav_container">
+          <ul class="nav_list">
+              <li class="nav_item">
+                <a href="#hero" class="nav_link">
+                  <span class="hash">#</span>
+                  <span>home</span>
+                </a> 
+              </li>
+              <li class="nav_item">
+                <a href="#projects" class="nav_link">
+                  <span class="hash">#</span>
+                  <span>projects</span>
+                </a>
+              </li>
+              <li class="nav_item">
+                <a href="#about" class="nav_link">
+                  <span class="hash">#</span>
+                  <span>about</span>
+                </a>
+              </li>
+              <li class="nav_item">
+                <a href="#learning" class="nav_link">
+                  <span class="hash">#</span>
+                  <span>learning</span>
+                </a>
+              </li>
+              <li class="nav_item">
+                <a href="#contact" class="nav_link">
+                  <span class="hash">#</span>
+                  <span>contact</span>
+                </a>
+              </li>
+          </ul>  
+        </div>
     </header>
-
-    <main>
+    <div class="main_container">
+      <main>
         <section id="hero" class="section hero">
-            <div class="container">
-                <div class="hero_content">
-                    <div>
-                        <h1 class="hero_tittle">Hi! I'm <br>
-                            <span class="hero_name">Álvaro,</span> <br> you can call me <br><span class="hero_name">AL</span> or <span class="hero_name">JC.</span>
-                        </h1>
-                        <p class="hero_description">
-                            <span>
-                                I'm a Developer in Progress
-                            </span>
-                        </p>
-                        <div class="load_container">
-                          <span class="loader"></span>
-                          
-                        </div>
-                        <div class="terminal_loader">
-                          <div class="text">Loading...</div>
-                        </div> 
-                    </div>
-                </div>
+          <div class="hero_content">
+            <div class="hero_text">
+              <h1 class="hero_tittle">
+                  <div class="text">
+                    <div id="typing"></div>
+                  </div> 
+              </h1>
+              <p class="hero_description">
+                  <span>
+                      I'm a Junior Full-Stack Developer
+                  </span>
+              </p>                  
             </div>
+            <figure>
+              <img class="hero_img" src="/assets/img/jcazm_profile.jpg" alt="jcazm-profile-photo">
+            </figure>
+          </div>
         </section>
-
-        <section id="about" class="section about">
+  
+        <section id="projects" class="section projects">
+          <div class="container">
+            <div class="main_title">
+              <div class="title_container">
+                <h2 class="hash">#</h2>
+                <h2 class="section_title"> PROJECTS </h2>
+              </div>
+              <div class="section_line"></div>
+            </div>
+            <p class="section_description">These are some projects that I've been working in:</p>
+            <div class="project_cards">
+              <!--Card 1-->
+              <div class="card">
+                <div class="section">
+                  <img src="assets/img/app-dng.png" alt="img project" class="img">
+                </div>
+                <div class="section technologies">
+                  <span class="project_technology">
+                    <!-- <i class="bx bxl-javascript"></i> --> JavaScript
+                  </span>
+                  <span class="project_technology">
+                    <!-- <i class="bx bxl-css3"></i> --> CSS
+                  </span>
+                  <span class="project_technology">
+                    <!-- <i class="bx bxl-html5"></i> --> HTML
+                  </span>
+                </div>
+                <div class="section">
+                  <h3 class="project_title">Pokedex App</h3>
+                  <div class="project_links">
+                    <a href='https://github.com/Alzm21/pokedex-app' target="_blank" aria-label="To repository">
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a href='https://gotta-catch-them-all.netlify.app/' target="_blank" aria-label="Watch project">
+                      <i class='bx bx-link-external'></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!--Card 2-->
+              <div class="card">
+                <div class="section">
+                  <img src="assets\img\app-dng.png" alt="img project" class="img">
+                </div>
+                <div class="section technologies">
+                  <span class="project_technology">
+                    <!-- <i class="bx bxl-javascript"></i>  -->JavaScript
+                  </span>
+                  <span class="project_technology">
+                    <!-- <i class="bx bxl-css3"></i> --> CSS
+                  </span>
+                  <span class="project_technology">
+                    <!-- <i class="bx bxl-html5"></i> --> HTML
+                  </span>
+                </div>
+                <div class="section">
+                  <h3 class="project_title">Rick and morty API</h3>
+                  <div class="project_links">
+                    <a href='https://github.com/Alzm21/rick-and-morty-api' target="_blank" aria-label="To repository">
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a href='https://api-rick-4nd-morty.netlify.app/' target="_blank" aria-label="Ver proyecto">
+                      <i class='bx bx-link-external'></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!--Card 3-->
+              <div class="card">
+                <div class="section">
+                  <img src="assets\img\app-dng.png" alt="img project" class="img">
+                </div>
+                <div class="section technologies">
+                  <span class="project_technology">
+                    <!-- <i class="bx bxl-javascript"></i>  -->JavaScript
+                  </span>
+                  <span class="project_technology">
+                    <!-- <i class="bx bxl-css3"></i>  -->CSS
+                  </span>
+                  <span class="project_technology">
+                    <!-- <i class="bx bxl-html5"></i>  -->HTML
+                  </span>
+                </div>
+                <div class="section">
+                  <h3 class="project_title">Project #3</h3>
+                  <div class="project_links">
+                    <a href='#' target="_blank" aria-label="To repository">
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a href='#' target="_blank" aria-label="Ver proyecto">
+                      <i class='bx bx-link-external'></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+          <section id="about" class="section about">
             <div class='container'>
-              <h2 class='section_tittle'>🔰 ABOUT ME 🔰</h2>
+              <div class="main_title">
+                <div class="title_container">
+                  <h2 class="hash">#</h2>
+                  <h2 class="section_title"> ABOUT ME </h2>
+                </div>
+                <div class="section_line"></div>
+              </div>
               <div class="about_content">
                 <div class="about_info">
-                    <p>I'm a passionate student of Fullstack Development at Academlo, driven by a deep love for technology and thirst for knowledge.
-                        With a blend of dedication, curiosity, and touch of playfulness. I navigate through technology and the Internet constantly
-                        seeking new challenges and oportunities to grow.</p>
+                  <p>Hello! I am Álvaro Zuna Miranda, a Full-Stack Developer and Financial Engineer from Cochabamba, Bolivia. <br><br>
+                    Besides my knowledge in economics and finance, my passion and dedication lie in technology. I am enthusiastic about 
+                    continuous learning, particularly in order to create solutions or identify problems and provide effective solutions.<br><br>
+                    I am a dedicated and serious professional, constantly seeking new challenges and opportunities for growth and development.
+                  </p>
                 </div>
                 <div class="about_image">
                     <img src="assets\img\jcazm_profile.jpg" alt="" class="about_img">
@@ -81,202 +195,132 @@
               </div>
             </div>
           </section>
-
-          <section id="projects" class="section">
-            <div class="container">
-              <h2 class="section_tittle">💻 PROJECTS 💡</h2>
-              <p class="section_description">These are some projects that I've been working in:</p>
-
-              <div class="projects_content">
-                <!--Card 1-->
-                <div class="projects_item">
-                  <div class="projects_image">
-                    <img src="assets/img/portfolio.png" alt="img project" class="img">
-                  </div>
-                  <div class="projects_body">
-                    <div class="projects_head">
-                      <h3 class="projects_tittle">Project #1<br>My First Portfolio</h3>
-                      <div class="projects_links">
-                        <a href='#' target="_blank" aria-label="To repository">
-                          <i class="bx bxl-github"></i>
-                        </a>
-
-                        <a href='#' target="_blank" aria-label="Watch project">
-                          <i class='bx bx-link-external'></i>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="projects_skills">
-                      <span class="projects_skill">
-                        <i class="x bxl-javascript"></i> JavaScript
-                      </span>
-                      <span class="projects_skill">
-                        <i class="bx bxl-css3"></i> CSS
-                      </span>
-                      <span class="projects_skill">
-                        <i class="bx bxl-html5"></i> HTML
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <!--Card 2-->
-                <div class="projects_item">
-                  <div class="projects_image">
-                    <img src="assets\img\app-dng.png" alt="img project" class="img">
-                  </div>
-                  <div class="projects_body">
-                    <div class="projects_head">
-                      <h3 class="projects_tittle">Project #2</h3>
-                      <div class="projects_links">
-                        <a href='#' target="_blank" aria-label="To repository">
-                          <i class="bx bxl-github"></i>
-                        </a>
-
-                        <a href='#' target="_blank" aria-label="Ver proyecto">
-                          <i class='bx bx-link-external'></i>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="projects_skills">
-                      <span class="projects_skill">
-                        <i class="x bxl-javascript"></i> JavaScript
-                      </span>
-                      <span class="projects_skill">
-                        <i class="bx bxl-css3"></i> CSS
-                      </span>
-                      <span class="projects_skill">
-                        <i class="bx bxl-html5"></i> HTML
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <!--Card 3-->
-                <div class="projects_item">
-                  <div class="projects_image">
-                    <img src="assets\img\app-dng.png" alt="img project" class="img">
-                  </div>
-                  <div class="projects_body">
-                    <div class="projects_head">
-                      <h3 class="projects_tittle">Project #3</h3>
-                      <div class="projects_links">
-                        <a href='#' target="_blank" aria-label="To repository">
-                          <i class="bx bxl-github"></i>
-                        </a>
-
-                        <a href='#' target="_blank" aria-label="Ver proyecto">
-                          <i class='bx bx-link-external'></i>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="projects_skills">
-                      <span class="projects_skill">
-                        <i class="x bxl-javascript"></i> JavaScript
-                      </span>
-                      <span class="projects_skill">
-                        <i class="bx bxl-css3"></i> CSS
-                      </span>
-                      <span class="projects_skill">
-                        <i class="bx bxl-html5"></i> HTML
-                      </span>
-                    </div>
-                  </div>
-                </div>
-          </section>
-
-           
-
-          <section id="learning" class="section">
+              
+          <section id="learning" class="section learning">
             <div class='container'>
-              <h2 class='section_tittle'>⏳ LEARNING 📚</h2>
+              <div class="main_title">
+                <div class="title_container">
+                  <h2 class="hash">#</h2>
+                  <h2 class="section_title"> LEARNING </h2>
+                </div>
+                <div class="section_line"></div>
+              </div>
               <div class="section_content">
                 <div class="section_info">
                   <p class="section_description">
-                    Driven by a passion for learning, I take myself seriously each module at Academlo, as an opportunity to expand my knowledge and refine my skills. 
-                    I am committed to mastering the following tools: <br><br></p>
-                    <ul class="wrapper">
-                      <li class="icon html">
-                          <span class="tooltip">HTML</span>
-                          <span><i class="fab fa-facebook-f"></i></span>
-                      </li>
-                      <li class="icon css">
-                          <span class="tooltip">CSS</span>
-                          <span><i class="fab fa-twitter"></i></span>
-                      </li>
-                      <li class="icon javascript">
-                          <span class="tooltip">JavaScript</span>
-                          <span><i class="fab fa-instagram"></i></span>
-                      </li>
-                  </ul>
+                    I'm constantly learning, even after finishing academic courses. I take myself seriously learning as an opportunity to expand my knowledge and refine my skills. 
+                    Here are the current and new skills that are part of my expertise: <br><br></p>
+                </div>
+                <div class="skills_container">
+                  <div class="col_section">
+                    <div class="table_skill">
+                      <h2>Languages</h2>
+                      <span>JavaScript<br>Python <br> PHP</span>
+                    </div>
+                    <div class="table_skill">
+                      <h2>Other</h2>
+                      <span>HTML<br>CSS<br></span>
+                    </div>
+                  </div>
+                  <div class="col_section">
+                    <div class="table_skill">
+                      <h2>Databases</h2>
+                      <span>PostgreSQL<br>MySQL<br>MongoDB</span>
+                    </div>
+                    <div class="table_skill">
+                      <h2>Frameworks</h2>
+                      <span>React<br>Node.js</span>
+                    </div>
+                  </div>
+                  <div class="col_section">
+                    <div class="table_skill">
+                      <h2>Tools</h2>
+                      <span>VSCode<br>Git<br>GitHub<br>Figma<br>Postman</span>
+                    </div>
+                    <div class="table_skill">
+                      <h2>QA Tools</h2>
+                      <span>Selenium Cypress<br>JUnit - JMeter<br></span>
+                    </div>
+                  </div>
+                  <div class="icons_container">
+                    <img class="icon_f n1" src="/assets/img/js.svg" alt="JavaScript">
+                    <img class="icon_f n2" src="/assets/img/git.svg" alt="">
+                    <img class="icon_f n3" src="assets\img\html.svg" alt="">
+                    <img class="icon_f n2" src="assets\img\github.svg" alt="">
+                    <img class="icon_f n3" src="assets\img\css.svg" alt="">
+                    <img class="icon_f n1" src="assets\img\figma.svg" alt="">
+                    <img class="icon_f n3" src="assets\img\cypress.svg" alt="">
+                    <img class="icon_f n1" src="assets\img\apachejmeter.svg" alt="">
+                    <img class="icon_f n2" src="assets\img\postgresql.svg" alt="">
+                    <img class="icon_f n1" src="assets\img\mysql.svg" alt="">
+                    <img class="icon_f n2" src="assets\img\selenium.svg" alt="">
+                    <img class="icon_f n3" src="assets\img\junit5.svg" alt="">
+                    <img class="icon_f n2" src="assets\img\react.svg" alt="">
+                    <img class="icon_f n3" src="assets\img\postman.svg" alt="">
+                    <img class="icon_f n1" src="assets\img\python.svg" alt="">
+                  </div>
                 </div>
               </div>
             </div>
           </section>
-
-          <section id="interests" class="section">
+  
+          <!-- <section id="interests" class="section interests">
             <div class='container'>
-              <h2 class='section_tittle'>🎭 INTERESTS 🎶</h2>
+              <h2 class='section_title'>🎭 INTERESTS 🎶</h2>
               <div class="section_content">
                 <div class="section_info">
                   <p>Beyond the learning and development, I have personal preferences: </p> <br>
                   <ul>
-                    <li>Gaming Enthusiast: I'm all about those chill gaming sessions, especially diving into survival games and classic RTS gems like Age of Empires and Starcraft. 
-                      Whether I'm strategizing my way to victory or surviving against the odds, gaming is my go-to for relaxation and excitement.</li> <br>
-                    <li>Musical Aspirations: Ever since I can remember, I've had this itch to learn the piano 🎹 and violin 🎻. 
-                      Someday, I'm going to make those beautiful instruments sing, adding my own touch to the symphony of life.</li> <br>
-                    <li>Musical Inspirations:  Hans Zimmer's music is my jam! When I'm in the zone, you'll find me lost in his epic compositions. 
-                      From intense action sequences to heart-wrenching melodies, his music fuels my creativity and keeps me focused.</li> <br>
-                    <li>Work and Play Playlist: Want to vibe with me? Check out my Spotify playlist. It's got everything from epic movie soundtracks to chill beats—perfect 
-                      for keeping the energy up during work or winding down after a long day:</li>
+                    <li>Gaming Enthusiast: I love survival and classic RTS games like Age of Empires and Starcraft.</li> <br>
+                    <li>Musical Inspirations:  Hans Zimmer's music is epic and glorious! His music fuels my creativity and keeps me focused.</li> <br>
+                    <li>Work and Play Playlist: Want to vibe with me? Check out my Spotify playlist. It got everything, from epic movie soundtracks to chill beats, perfect
+                      for keeping the energy up during work or relaxing after a long day:</li>
                   </ul>
                   <div class="spotify_info">
-                    <button class="btn_sptf"><i class='bx bxl-spotify'></i></button>
+                    <button class="btn_sptf" id="btnRedirect"><i class='bx bxl-spotify'></i></button>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-
-          <section id="contact" class="section">
+          </section> -->
+  
+          <section id="contact" class="section contact">
             <div class='container'>
-              <h2 class='section_tittle'>✉ CONTACT 📌</h2>
-              <div class="section_content">
-                
-                <form class="form">
-                  <label class="tittle">Contact me:</label>
-                  <input class="input" type="text" placeholder="Your email">
-                  <textarea placeholder="Your message" cols="30" rows="10"></textarea>
-                  <button class="submit">Submit</button>
-                </form>
-
-                <div class="social_networks">
-                  <p>You can also follow my Social Networks:</p>
+              <div class="main_title">
+                <div class="title_container">
+                  <h2 class="hash">#</h2>
+                  <h2 class="section_title"> CONTACTS </h2>
                 </div>
+                <div class="section_line"></div>
+              </div>
+              <div class="section_description">
+                    I'm also seeking opportunities in both full-time and freelance capacities. However, if you have other request or question, contact me.
               </div>
               <div class="contact_links">
-                <a class="contact_link" href="https://www.linkedin.com/in/alvaro-zuna-miranda-a8348917b/" target="_blank" rel="noopener">
-                  <i class='bx bxl-linkedin bx-flashing' ></i> My Linkedin
-                </a>
-                
-                <a class="contact_link" href="https://github.com/Alzm21" target="_blank">
-                  <i class='bx bxl-github bx-flashing' ></i> My Repo
-                </a>
-            </div>                
-
-          </section>
-
-          <footer class="footer">
-            <div class="container">
-              <p>🌚 Diseñado y desarrollado por Álvaro, 2024 ©</p>
+                <div class="button_cntnr">
+                  <button id="copyEmail" class="bn_hvr bx bx-envelope contact_link"></button>
+                  <p id="statusMessage" class="status-message hidden"></p>
+                </div>
+                <div class="social_networks">
+                  <a class="bn_hvr contact_link" href="https://www.linkedin.com/in/alvaro-zuna-miranda-a8348917b/" target="_blank">
+                    <i class='bx bxl-linkedin' ></i>
+                  </a>
+                  <a class="bn_hvr contact_link" href="https://github.com/Alzm21" target="_blank">
+                    <i class="bx bxl-github"></i></a>
+                </div>
             </div>
-          </footer>
+          </section>
+  
+        <footer class="footer">
+          <div class="container">
+            <p>© Copyright 2024. Made by Álvaro Zuna (Alv)</p>
+          </div>
+        </footer>
+  
+          
+      </main>
+    </div>
+    <script type="module" src="./assets/js/script.js"></script>
 
-        
-    </main>
-    <script src="assets\js\script.js"></script>
-</body>
+  </body>
 </html>

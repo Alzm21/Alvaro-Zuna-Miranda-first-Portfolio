@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "animejs": "^3.2.2",
+    "typed.js": "^2.1.0"
+  }
+}

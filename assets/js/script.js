@@ -1,21 +1,35 @@
-/* const btnDark = document.getElementById('btnDark')
-const dlIcon = document.getElementById('dlIcon')
+import Typed from '../../node_modules/typed.js/dist/typed.module.js'
 
+document.addEventListener('DOMContentLoaded', () => {
+  const typed = new Typed('#typing', {
+    strings:["Hi! I'm Alvaro Zuna."],
+    typeSpeed: 65,
+    backSpeed: 0,
+    backDelay: 1900,
+    loop: true,
+    cursorChar: '|'
+  });
+}) 
 
-function update_dlIcon() {
-  if (document.body.classList.contains('dark')){
-    dlIcon.src = 'assets/img/sun-solid-24.png'
-  } else {
-    dlIcon.src = 'assets/img/moon-solid-24.png'
-  }
+document.getElementById('copyEmail').addEventListener('click', function(event){
+  event.preventDefault()
+  const email = 'jcazm92@gmail.com'
+  navigator.clipboard.writeText(email).then( () => {
+    showStatusMessage('Email copied to clipboard')
+  }).catch(err => {
+    console.error('Could not copy the text', err);    
+  })
+})
+
+function showStatusMessage (message) {
+  const statusMessage = document.getElementById('statusMessage')
+  statusMessage.textContent = message
+  statusMessage.classList.remove('hidden')
+
+  setTimeout(() => {
+    statusMessage.classList.add('hidden')
+  }, 3000)
 }
-
-update_dlIcon()
-
-btnDark.onclick = function(){
-  document.body.classList.toggle('dark')
-  update_dlIcon()
-} */
 
 const btnOpen = document.querySelector('.btn_open')
 
@@ -44,11 +58,3 @@ for (const iterator of links) {
         }
   }
  */
-
-  /* Usando la libreria typing.js */
-var typed = new Typed('#typing', {
-  strings: ['Frontend', 'Backend', 'FullStack'],
-  typeSpeed: 65,
-  loop: true,
-  cursorChar: '__'
-})
