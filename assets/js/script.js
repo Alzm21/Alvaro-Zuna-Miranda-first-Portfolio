@@ -2,7 +2,7 @@ import Typed from '../../node_modules/typed.js/dist/typed.module.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   const typed = new Typed('#typing', {
-    strings:["Hi! I'm Alvaro Zuna."],
+    strings:["Hi! I'm Alvaro."],
     typeSpeed: 65,
     backSpeed: 0,
     backDelay: 1900,
@@ -20,7 +20,6 @@ document.getElementById('copyEmail').addEventListener('click', function(event){
     console.error('Could not copy the text', err);    
   })
 })
-
 function showStatusMessage (message) {
   const statusMessage = document.getElementById('statusMessage')
   statusMessage.textContent = message
@@ -48,13 +47,3 @@ for (const iterator of links) {
   })
   
 }
-
-/* btnDark.onclick = function () {
-    document.body.classList.toggle('dark')
-    if (document.body.classList.contains('dark')) {
-      modeIcon.src = 'assets\img\moon-solid-24.png'
-      } else {
-        modeIcon.src = 'assets\img\sun-solid-24.png'
-        }
-  }
- */
