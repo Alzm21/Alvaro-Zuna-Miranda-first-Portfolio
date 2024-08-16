@@ -1,6 +1,6 @@
 import Typed from '../../node_modules/typed.js/dist/typed.module.js'
 
-document.addEventListener('DOMContentLoaded', () => {
+/* document.addEventListener('DOMContentLoaded', () => {
   const typed = new Typed('#typing', {
     strings:["Hi! I'm Alvaro."],
     typeSpeed: 65,
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loop: true,
     cursorChar: '|'
   });
-}) 
+})  */
 
 document.getElementById('copyEmail').addEventListener('click', function(event){
   event.preventDefault()

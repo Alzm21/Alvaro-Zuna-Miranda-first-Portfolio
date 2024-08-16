@@ -182,14 +182,27 @@ body {
     color: var(--dan7);
     margin-top: 1.4em;
   }
-  .text {
+/*   .text {
+    font-size: 24px;
+    width: 22ch;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+  } */
+
+  .typing::before {
+    content: "Hi! I'm Alvaro.";
+    color: var(--dan3);
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid var(--dan3); /* The cursor */
     display: inline-block;
-    position: relative;
-    color: var(--dan6);
+    animation: typing 4s steps(20) infinite, blink-caret 0.75s step-end infinite;
+    width: 0;
+    box-sizing: border-box;
   }
-  #typing {
-    display: inline;
-  }
+
   .btn_1 {
     padding: 10px 25px;
     background: transparent;
@@ -750,6 +763,17 @@ body {
   }
 }
 
+@keyframes typing {
+  0% { width: 0; }
+  30% { width: 9.5em; }
+  80% { width: 9.5em; }  
+  100% { width: 0; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--dan3); }
+}
 
                             /* OFF-SET */
 
