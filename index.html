@@ -15,6 +15,16 @@
           <img class="logo" src="/assets/img/Logo.png" alt="Alv_logo">
         </figure>
         <div class="nav_container">
+          <div class="nav_toggle_label">
+            <i class='bx bx-menu' style='color:var(--dan3)'></i>
+          </div>
+          <ul class="nav_menu">
+            <li class="menu_list"><a href="#hero" class="menu_link">home</a></li>
+            <li class="menu_list"><a href="#projects" class="menu_link">projects</a></li>
+            <li class="menu_list"><a href="#about" class="menu_link">about</a></li>
+            <li class="menu_list"><a href="#learning" class="menu_link">learning</a></li>
+            <li class="menu_list"><a href="#contact" class="menu_link">contact</a></li>
+          </ul>
           <ul class="nav_list">
               <li class="nav_item">
                 <a href="#hero" class="nav_link">
@@ -46,16 +56,23 @@
                   <span>contact</span>
                 </a>
               </li>
-          </ul>  
+          </ul>
         </div>
     </header>
-    <main>
-      <div class="main_container">
-        <section id="hero" class="section hero">
+    <main class="main_container">
+      <section id="hero" class="section hero">
           <div class="hero_content">
+            <figure class="avatar_container">
+              <img class="hero_img" src="/assets/img/photo_1p.png" alt="jcazm-profile-photo">
+              <div class="vector a"></div>
+              <div class="vector b"></div>
+              <div class="vector c"></div>
+              <div class="vector d"></div>
+              <div class="vector e"></div>
+            </figure>
             <div class="hero_text">
               <h1 class="hero_tittle">
-                  <div class="typing"></div> 
+                <div class="typing"></div> 
               </h1>
               <p class="hero_description">
                   <span class="small_desc">
@@ -66,21 +83,12 @@
                     I consider myself someone who works well with teammates and possesses the ability to rethink processes to ensure the high level of accurancy.
                   </span>
                   <a href="#contact" class="btn_1 btn_2">Contact me</a>
-
               </p>                  
             </div>
-            <figure class="avatar_container">
-              <img class="hero_img" src="/assets/img/photo_1p.png" alt="jcazm-profile-photo">
-              <div class="vector a"></div>
-              <div class="vector b"></div>
-              <div class="vector c"></div>
-              <div class="vector d"></div>
-              <div class="vector e"></div>
-            </figure>
           </div>
-        </section>
+      </section>
   
-        <section id="projects" class="section projects">
+      <section id="projects" class="section projects">
           <div class="container">
             <div class="main_title">
               <div class="title_container">
@@ -94,7 +102,7 @@
               <!--Card 1-->
               <div class="card">
                 <div class="card_section_img">
-                  <img src="assets/img/pokedex.png" alt="img project" class="img">
+                  <img src="assets/img/pokedex.png" alt="img project" class="img_pjt">
                 </div>
                 <div class="card_section_tech">
                   <span class="project_technology">
@@ -123,7 +131,7 @@
               <!--Card 2-->
               <div class="card">
                 <div class="card_section_img">
-                  <img src="assets/img/rick&morty.png" alt="img project" class="img">
+                  <img src="assets/img/rick&morty.png" alt="img project" class="img_pjt">
                 </div>
                 <div class="card_section_tech">
                   <span class="project_technology">
@@ -152,7 +160,7 @@
               <!--Card 3-->
               <div class="card">
                 <div class="card_section_img">
-                  <img src="assets\img\app-dng.png" alt="img project" class="img">
+                  <img src="assets\img\app-dng.png" alt="img project" class="img_pjt">
                 </div>
                 <div class="card_section_tech">
                   <span class="project_technology">
@@ -178,7 +186,7 @@
                 </div>
               </div>
             </div>
-            <p class="section_description">Personal Projects:</p>
+            <div class="section_description">Personal Projects:</div>
             <div class="project_cards">
               <div class="under_construction">
                 <div class="dot-spinner">
@@ -195,9 +203,9 @@
               </div>
             </div>
           </div>
-        </section>
+      </section>
   
-        <section id="about" class="section about">
+      <section id="about" class="section about">
             <div class='container'>
               <div class="main_title">
                 <div class="title_container">
@@ -219,9 +227,9 @@
                 </div>
               </div>
             </div>
-        </section>
+      </section>
               
-        <section id="learning" class="section learning">
+      <section id="learning" class="section learning">
             <div class='container'>
               <div class="main_title">
                 <div class="title_container">
@@ -287,9 +295,9 @@
                 </div>
               </div>
             </div>
-        </section>
+      </section>
     
-        <section id="contact" class="section contact">
+      <section id="contact" class="section contact">
             <div class='container'>
               <div class="main_title">
                 <div class="title_container">
@@ -316,17 +324,16 @@
             </div>
             <!-- <div class="bckgrnd"></div> -->
             
-        </section>
+      </section>
         
-        <footer class="footer">
-          <div class="container">
-            <p>© Copyright 2024. Made by Álvaro Zuna (Alv)</p>
-          </div>
-
-        </footer>
+      <footer class="footer">
+        <div class="container">
+          <p>© Copyright 2024. Made by Álvaro Zuna (Alv)</p>
+        </div>
+      </footer>
   
           
-      </div>
+      
     </main>
     <script type="module" src="./assets/js/script.js"></script>
 

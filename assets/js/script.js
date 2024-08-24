@@ -30,20 +30,17 @@ function showStatusMessage (message) {
   }, 3000)
 }
 
-const btnOpen = document.querySelector('.btn_open')
-
+const btnOpen = document.querySelector('.nav_toggle_label')
 const navMenu = document.querySelector('.nav_menu')
 
 btnOpen.onclick = function () {
   navMenu.classList.toggle('show_menu')
 }
 
-
-const links = document.querySelectorAll('.nav_link')
+const links = document.querySelectorAll('.menu_link')
 
 for (const iterator of links) {
   iterator.addEventListener('click', function () {
     navMenu.classList.remove('show_menu')
   })
-  
 }
