@@ -1,15 +1,3 @@
-import Typed from '../../node_modules/typed.js/dist/typed.module.js'
-
-/* document.addEventListener('DOMContentLoaded', () => {
-  const typed = new Typed('#typing', {
-    strings:["Hi! I'm Alvaro."],
-    typeSpeed: 65,
-    backSpeed: 0,
-    backDelay: 1900,
-    loop: true,
-    cursorChar: '|'
-  });
-})  */
 
 document.getElementById('copyEmail').addEventListener('click', function(event){
   event.preventDefault()
